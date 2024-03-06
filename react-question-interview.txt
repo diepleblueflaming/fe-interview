@@ -1,0 +1,84 @@
+			/******************************************************** React Question Interview **********************************************/
+
+
+ Khi nào thì 1 component sẽ re-render:
+Update in state: The state change can be from a prop or setState change to update a variable(say). The component gets the updated state and React re-renders the component to reflect the change on the app.
+Update in prop: Likewise the change in prop leads to state change and state change leads to re-rendering of the component by React.
+Re-rendering of parent component: Whenever the components render function is called, all its subsequent child components will re-render, regardless of whether their props have changed or not.
+
+
+1. What are Pure Components?
++ React.PureComponent is similar to React.Component.
++ The difference between them is that React Component doesn’t implement shouldComponentUpdate(), but React.PureComponent implements it with a shallow prop and state comparison.
+
+
++ What is shallow comparison ?
+ + Performs equality by iterating through keys on an object and returning false when any key has values which are not strictly equal between the arguments. 
+ + Returns true when the values of all keys are strictly equal.
+
+
+Use Pure compionent when:
+ + Optimize perfomance(pure component only re-render when it's props, state actualy change)  and you expect to have simple props and state.
+ 
+How to use:
+ + Class component: extend [React.PureComponent].
+ + Fnc cpn: use [memo] in React
+ 
+
+Note: 
+ + Function cpn by default is component(not pure component).
+ + With class component: When you call setState react will trigger render method.
+ 
+ 
+ 
+2. What are stateless components? 
+ + Không có state
+ + Prop chuyền vào như thế nào thì render ra như vậy.
+ + Khi prop thay đổi thì re-render.
+ + Sử dụng để tạo presentation component.
+ + Càng nhiều stateless component càng tốt, vì dẽ quản lý và tránh việc re-render thừa.
+ 
+ 
+ 3. Stateful component
+ + Có state
+ + Ren-render khi state, props thay đổi.
+ + Sử dụng tạo container component.
+ + Càng ít stateful càng tốt.
+ 
+ 
+ 4. Virtual DOM
+	 4.1 What it is: Nó tạo ra 1 bộ nhớ đệm (cache) dữ liệu trong bộ nhớ (memory), tính toán các thay đổi sau đó cập nhật lên DOM thật một cách hiệu quả . 
+	 Điều này giúp các developer có cảm giác code họ đang viết sẽ được Render liên tục sau mỗi lần thay đổi nhưng thực tế là nó chỉ render các components bị thay đổi chứ không phải toàn bộ màn hình .
+	 
+	 4.2 Why reacts use it:
+		- Efficient DOM manipulation: 
+		 + Manipulating real DOM can be slow and inefficient, The virtual DOM allow React to perform DOM operations in memory, without touch the actual DOM.
+		 Then React compares the virtual DOM with the real DOM and applies only the necessary changes to update the UI, minimizing the number of DOM manipulations and improving performance
+		 
+		- Batches updates: React batches multiple upadate to the virtual DOM, optimazing perfomance by reducing the number of actual DOM updates.
+			Instead of immediately aplying each individual change to the real DOM, React schedules updates and perform them in batches, which helps avoid unnecessary reflows and repaints.
+			resulting in a smoother user experience
+		
+		- Cross Platform Compatibility: The virtual DOM provides a platform-independent represenation of the UI, allowing React to work consistently across different environments(such as
+			Web browser and mobile device(React Native)
+		
+		- Developer Friendly Abstraction: The virtual serves as an abstraction layer that simplifies the development process for React developer. developer work with React's component base architecture and declarative API
+			make it easier to reason about and maintain UI code.
+			
+		- Server side rendering: The virtual DOM is also used in SSR to render React component on the server and generate HTML ouput that can be sent to the client.
+	
+	
+	 4.3 .What is the difference between Real DOM and Virtual DOM?
+	 
+			Updates are slow							Updates are fast
+		DOM manipulation is very expensive.					DOM manipulation is very easy
+		You can update HTML directly.						You Can’t directly update HTML
+		It causes too much of memory wastage					There is no memory wastage
+		Creates a new DOM if element updates					It updates the JSX if element update
+		
+
+
+
+ 
+ 
+

@@ -1,0 +1,108 @@
+
+
+
+// What are the major features of VueJS?
+1. https://github.com/sudheerj/vuejs-interview-questions#what-are-the-major-features-of-vuejs
+
+
+// What are the lifecycle methods of VueJS?
+2. https://github.com/sudheerj/vuejs-interview-questions#what-are-the-lifecycle-methods-of-vuejs
+
+
+// What is the difference between v-show and v-if directives?
+3. https://github.com/sudheerj/vuejs-interview-questions#what-is-the-difference-between-v-show-and-v-if-directives
+
+
+// Why do you need to use key attribute on for directive?
+4. https://github.com/sudheerj/vuejs-interview-questions#why-do-you-need-to-use-key-attribute-on-for-directive
+
+
+// How do you implement two-way binding?
+5. https://github.com/sudheerj/vuejs-interview-questions#how-do-you-implement-two-way-binding
+
+
+// How do you communicate from child to parent using events?
+6. https://github.com/sudheerj/vuejs-interview-questions#how-do-you-communicate-from-child-to-parent-using-events
+
+
+// What are slots?
+7. https://github.com/sudheerj/vuejs-interview-questions#what-are-slots
+
+
+// global registration in components, local registration in components
+8.1 https://github.com/sudheerj/vuejs-interview-questions#what-is-global-registration-in-components
+8.2 https://github.com/sudheerj/vuejs-interview-questions#what-is-the-difference-between-local-and-global-registration-in-module-system
+
+
+
+// How do you customize model directive for a component?
+9. https://github.com/sudheerj/vuejs-interview-questions#how-do-you-customize-model-directive-for-a-component
+
+
+// What are single file components?
+10. https://github.com/sudheerj/vuejs-interview-questions#what-are-single-file-components
+
+
+// What are filters?
+11. https://github.com/sudheerj/vuejs-interview-questions#what-are-filters
+
+
+// What are plugins and their various services?
+12. https://github.com/sudheerj/vuejs-interview-questions#what-are-plugins-and-their-various-services
+
+
+
+
+// Is Single File Components violating separation of concerns?
+11. https://github.com/sudheerj/vuejs-interview-questions#is-single-file-components-violating-separation-of-concerns
+
+// Is recommended to use async for computed properties?
+3. https://github.com/sudheerj/vuejs-interview-questions#is-recommended-to-use-async-for-computed-properties
+
+
+// How do you watch for nested data changes?
+4. https://github.com/sudheerj/vuejs-interview-questions#how-do-you-watch-for-nested-data-changes
+
+
+// What is the main difference between method and computed property?
+5. https://github.com/sudheerj/vuejs-interview-questions#what-is-the-main-difference-between-method-and-computed-property
+
+
+
+// What is the purpose of browserslist option?
+6. https://github.com/sudheerj/vuejs-interview-questions#what-is-the-purpose-of-browserslist-option
+
+
+
+
+
+
+
+
+
+/************************************** Practicaly questions ******************/
+
+
+
+1. Làm thế nào để keep trạng thái của một component ?
+
+Ex: Có 5 cái tab hiển thị ảnh, trong mỗi tab thì user có thể scroll để xem ảnh ?
+Khi user di chuyển qua lại giữa các tab thì cần keep lại vị trí scroll.
+
+-------> Use keep-alive tag.
+
+
+
+2. Một page hiển thị toàn ảnh nặng -> làm thế nào để khi user vào page có thể xem được một số ảnh đầu tiên mà không cần chờ load ảnh ?
+
+
+--------> Có thể preload tầm chục ảnh đầu tiên trước rồi mới hiện màn(show loading)
+
+
+
+3. Để làm tính năng tracking user trên web, thì khi user vào mỗi page thì cần report tên của page mà user vừa vào(Dùng filebase) thì làm ntn ?
+
+Làm một cái global mixin
+
+
+

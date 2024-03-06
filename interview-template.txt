@@ -1,0 +1,142 @@
+
+
+1. Giới thiệu về bản thân.
+
+2. Nói sơ qua về các dự án đã làm:
+ Miêu tả vai trò trong các dự án đó.
+ Sau các dự án đó thì skill có cải thiện như nào ?
+ 
+ 2.1 Tell me about a project that disappointed you. What would you change ?
+ 
+
+ 2.2 Hỏi về các kiến thức khác: Backend, mobile app, english, kĩ năng làm việc nhóm, cách học một ngôn ngữ mới, cách giải quyết vấn đề khó.
+ 
+ 
+3. Hỏi các kiến thức chung về web, app:
+ + Web storage là gì ?
+ 
+ /* Can you explain the purpose of each of the HTTP request type when using a RESTful web service? */
+   + "GET" 	is a type of request that retrieves data from the server.
+   + "POST" 	The POST method submits an entity to the specified resource, often causing a change in state or side effects on the server.
+   + "OPTIONS"	The OPTIONS method describes the communication options for the target resource.
+   + "PUT" 	The PUT method replaces all current representations of the target resource with the request payload.
+   + "DELETE" 	is a request similar to PUT and is used to delete the resource from the server.
+   + "TRACE" 	is used to validate content received along with the network during a request.
+   + "HEAD" 	is similar to GET but receives response headers during the request.
+ 
+ 
+ /* What’s the difference between Canvas and SVG? */
+ 
+  	Canvas														SVG
+   Pixel-based (dynamic .png)												Based form
+   Single HTML element. (Inspect the element in the Developer Tool. 						Multiple graphic elements, which become part of the DOM
+    You can see only the canvas tag)										
+   Modified via script only											Modified via script and CSS
+   The interaction between the event model and the user is granular (x, y)					The interaction between the event model and the user is summarized (rect, path)
+   Performance is better with a smaller footprint, a larger number of objects (> 10k), or both		Performance is better with a smaller number of objects (<10k), a larger surface, or both
+ 
+
+ 
+ /* What is event bubbling, event capturing ? */
+  -> https://javascript.info/bubbling-and-capturing
+ 
+ 
+ /* Client side rendering ? server side rendering ? Ưu nhược điểm của từng cái ?  */
+ 
+ /* Mô hình client/server ? */
+ Là mô hình có server là 1 máy chủ chịu trách nhiệm quản lý, chia sẻ dữ liệu cho các máy trạm. Máy chủ thường sử dụng các hệ điều hành Unix, window.
+ Client là 1 hoặc nhiều máy trạm được sử dụng bởi người dùng.
+ Một client trong mô hình này có thể là một máy chủ trong mô hình khác.
+ 
+ 
+ /* What is websocket, http protocol ? */
+ 
+  WebSocket Connection
+  WebSocket is a bidirectional communication protocol that can send the data from the client to the server or from the server to the client by reusing the established connection channel. 
+  The connection is kept alive until terminated by either the client or the server.	
+  Almost all the real-time application like (trading, monitoring, notification) services uses WebSocket to receiving the data on a single communication channel.
+  All the frequently updated applications used WebSocket because it is faster than HTTP Connection.
+  
+  HTTP Connection
+  The HTTP protocol is unidirectional protocol works on the top of TCP protocol which is a connection-oriented transport layer protocol, 
+  we can create the connection by using HTTP request methods after getting the response HTTP connection get closed.
+  Simple RESTful application uses HTTP protocol which is stateless.
+  When we do not want to retain a connection for a particular amount of time or reusing the single connection for transmitting the data, HTTP connection is slower than the WebSocket.
+  
+ 
+ /* How do you optimize your site’s loading time? */
+	Reduce the image size
+	Use the latest generation formats for images
+	Minify HTML, CSS, and Javascript
+	Postpone uploading off-screen images
+	Create Accelerated Mobile Pages ( AMPs)
+	Remove unnecessary widgets
+	Avoid multiple redirects
+	Place CSS at the top and script referencing at the bottom or external files
+	Reduce lookups
+	Minimize redirects and caching
+	Check the current speed of the website
+	Finding a good hosting to host your website
+	Clean the web code
+
+
+
+ /* How do you manage your time during a development cycle? */
+   Bao gồm các bước nào ? thứ tự thực hiện ra sao ?
+ 
+ 
+ /* What priorities you would consider while building a web application? */
+
+  The following priorities should be kept in mind while building web applications:
+	Web site pages should be tested for performance as it should load as quickly as possible.
+	Applications pages should not have any broken links.
+	The application should be compatible with all major browsers like Mozilla Firefox, Google Chrome, Internet Explorer and Opera.
+	The site should contain keywords that are accessible to search engines.
+	There should be seamless connectivity with the database.
+	Database entities such as stored procedures should be thoroughly tested with valid input.
+	Backend tables should be secured, tamper-proof.
+	Data insertion should be validated by constraints at column and row levels.
+	Inserting data into DB tables and viewing them in the user interface process should be as quickly as possible.
+	The framework being used to integrate pages should be simple and should be tested without any compilation.
+	User input pages should be designed with minimal inputs from the user, elements used should be user friendly to access.
+	Use of HTTP2 to load page content quickly.
+	The use of JavaScript should be minimum.
+	Accessibility provision such as a speaker to read the text, bigger font size, screen touch access should be provided so that people with physical limitations can also access the website with ease.
+	Should integrate media files like audio and video that can be opened without relying on local software to execute these files.
+	Web pages should be responsive to mobile screens.
+ 
+ 
+ /* Các vấn đề về bảo mật nào cần quan tâm khi phát triển website ? */
+  -> "https://cheatsheetseries.owasp.org/cheatsheets/Clickjacking_Defense_Cheat_Sheet.html"
+  
+  
+ /* How do you implement lazy load in website ?*/
+ 
+ 
+ /* How do you implement infinity scroll in website */
+ 
+ 
+ /* Kĩ thuật debounce và Throttling */
+ + Throttling enforces a maximum number of times a function can be called over time. 
+  used: Đo vi trí scroll sau một thời gian nhất định
+ 
+ + Debouncing enforces that a function not be called again until a certain amount of time has passed without it being called.
+ used: 
+  Lấy giá trị cuối cùng của phần tử nào đó khi resize window
+  Không gọi API lấy dữ liệu khi người dùng ngừng nhập input 
+  
+  
+  + Detect when a page becomes inactive (users switch to another tab, minimizes browser..)
+  Using visiblityvchange event. Refer: https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilitychange_event
+  another way: using `blur` and `focus` event
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    

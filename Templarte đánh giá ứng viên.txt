@@ -1,0 +1,17 @@
+Họ tên ứng viên: xxx
+
+Fronend:
+ - Mấy năm kinh nghiệm ?
+ - Biết các lib, framework nào ?
+ - Kĩ năng HTML, CSS, JS
+ 
+
+Backend:
+	- Mấy năm kinh nghiệm ?
+	- Code ngôn ngữ gì ?
+
+- English
+- Kĩ năng mềm, thái độ
+- Định hướng công việc
+- Thời gian có thể chuyển công ty/đơn vị
+- Mong muốn cá nhân
